@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: darkgray;
+}
+
+.container {
+    display: grid;
+
+    text-align: center;
+    grid-template-areas: 'header header header''menu menu menu''content content aside''table table table''footer footer footer';
+}
+
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: menu;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(107, 77, 77);
+
+}
+
+.navbar ul {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.navbar li:hover {
+    background-color: rgb(161, 32, 32);
+}
+
+.navbar a:active {
+    color: white;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.active {
+    background-color: #213577;
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-area: content;
+    margin-top: 10px;
+}
+
+.aside {
+    display: grid;
+    grid-area: aside;
+    margin-left: 20px;
+}
+
+.table {
+    display: grid;
+    grid-area: table;
+}
+
+.table2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    margin-top: 10px;
+    background-color: rgb(107, 77, 77);
+}
+
+.icon {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Special Elite', cursive;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+}
